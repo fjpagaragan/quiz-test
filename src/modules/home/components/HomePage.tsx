@@ -1,22 +1,16 @@
 import { FC } from "react";
-import { AbsoluteCenter, Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { AbsoluteCenter, Box, Button, Center, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 
 const HomePage: FC = () => {
     return (
-        <Flex>
-        <Box h={'100vh'}>
-            <AbsoluteCenter axis="both" className="text-center">
-                <Box m={2}>
-                    <Heading as='h1' noOfLines={1}>English Mastery Begins Here</Heading>
-                </Box>
-                <Box m={2}>
-                    <Text fontSize={'lg'} noOfLines={2} color={'gray'}>Immerse yourself in our dynamic quizzes and conquer the challenges of Cambridge English exams.</Text>
-                </Box>
-                <Box m={2}>
-                    <Button color={'white'} bg={'#5F2D75'}>Begin Your English Journey</Button>
-                </Box>
-            </AbsoluteCenter>
-        </Box>
+        <Flex height={"90vh"} alignContent={"center"} justifyContent={"center"}>
+            <Center>
+                <Stack as={Box} textAlign={'center'}>
+                    <Heading as="h2" size="xl" mt={6} mb={2}>English Mastery Begins Here</Heading>
+                    <Text color={'gray.500'} noOfLines={2}>Immerse yourself in our dynamic quizzes and conquer the challenges of QuizTest English exams.</Text>
+                    <Button color={'white'} bg={'#5F2D75'} _hover={{ border: "2px", borderColor: "#5F2D75", background: "white", textColor: "#5F2D75" }}>Begin Your English Journey</Button>
+                </Stack>
+            </Center>
         </Flex>
     )
 };
