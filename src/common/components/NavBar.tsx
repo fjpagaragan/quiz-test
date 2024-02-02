@@ -25,8 +25,11 @@ const NavBar: FC = () => {
           <HStack spacing={8} alignItems={'center'}>
             <Box>Logo</Box>
             <HStack as={'nav'} spacing={4} display={'flex'}>
-              <Box as="a" px={2} py={1} rounded={'md'} _hover={{textDecoration: 'none', bg: useColorModeValue('gray.200', 'gray.700'),}} href={'/'}>
+              <Box as="a" px={2} py={1} rounded={'md'} color={'#595959'} fontStyle={'Inter'} fontSize={'16px'} fontWeight={400} _hover={{textDecoration: 'none', bg: useColorModeValue('gray.200', 'gray.700'),}} href={'/'}>
                 Home
+              </Box>
+              <Box as="a" px={2} py={1} rounded={'md'} color={'#595959'} fontStyle={'Inter'} fontSize={'16px'} fontWeight={400} _hover={{textDecoration: 'none', bg: useColorModeValue('gray.200', 'gray.700'),}} href={'/overview'}>
+                Start Quiz
               </Box>
             </HStack>
           </HStack>
