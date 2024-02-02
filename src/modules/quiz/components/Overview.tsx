@@ -1,7 +1,15 @@
 import { FC } from "react";
+import { useRouter } from "next/router";
 import { Box, Button, Flex, Heading, ListItem, Stack, Text, UnorderedList } from "@chakra-ui/react";
 
+
 const Overview: FC = () => {
+    const router = useRouter();
+
+    const directToQuizHandler = () => {
+        router.push('/quiz');
+    }
+
     return (
         <Flex alignContent={'center'} >
             <Stack as={Box} m={'100px'}>
@@ -33,6 +41,7 @@ const Overview: FC = () => {
                         variant={'outline'} 
                         _hover={{ border: "1px", borderColor: "#5F2D75", background: "#5F2D75", textColor: "white"}}
                         w={{ base: '100%', md: '20%', lg: '30%'}}
+                        onClick={directToQuizHandler}
                     >
                         Start Quiz
                     </Button>
