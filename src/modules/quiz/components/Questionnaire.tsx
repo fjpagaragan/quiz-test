@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { Dispatch, FC, SetStateAction, useState } from "react";
 import { 
     Box, 
     Flex, 
@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { ChoicesRadioGroup } from "@quiz/components/ChoicesRadioGroup";
+import { getQuestionLength } from "@quiz/transformers";
 
 interface QuestionnaireProps {
     label: string;
@@ -19,24 +20,29 @@ interface QuestionnaireProps {
     question: string;
     choices: string[];
     answer: string | null;
+    stepper: number;
+    setStepper: Dispatch<SetStateAction<number>>
     onAnswer: (answer: string) => void
 }
 
 
 const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
-    const { category, question, choices, answer, onAnswer } = props;
+    const { category, question, choices, answer, onAnswer, stepper, setStepper } = props;
+    const questionsLength: number = getQuestionLength();
+    const hasNextQuestion = questionsLength - 1 > stepper;
 
     return (
         <Flex height={'90vh'} alignContent={'center'} justifyContent={'center'}>
             <Center>
-                <Stack as={Box} textAlign={'center'} alignItems={'center'} width={'80%'}>
+                <Stack as={Box} textAlign={'center'} alignItems={'center'} width={'90%'}>
                     <Text color={'#D17A22'} fontSize={'20px'}>{category}</Text>
-                    <Heading color={'#5F2D75'} fontWeight={'600'} fontSize={'48px'} mr={'50px'} ml={'50px'}>
+                    <Heading width={'70%'} color={'#5F2D75'} fontWeight={'600'} fontSize={'48px'} mr={'50px'} ml={'50px'}>
                         {question}
                     </Heading>
                     <Box width={'100%'}>
                         <Grid gap={4}>
                             <GridItem>
+                                {stepper > 0 && 
                                 <IconButton
                                     isRound={true}
                                     variant='outline'
@@ -46,10 +52,11 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
                                     aria-label='Previous'
                                     fontSize='20px'
                                     icon={<ChevronLeftIcon />}
-                                />
+                                    onClick={() => { setStepper(stepper - 1)}}
+                                />}
                             </GridItem>
                             <GridItem colEnd={6}>
-                                <IconButton
+                            {hasNextQuestion &&<IconButton
                                     isRound={true}
                                     variant='outline'
                                     color={'#5F2D75'} 
@@ -58,7 +65,8 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
                                     aria-label='Next'
                                     fontSize='20px'
                                     icon={<ChevronRightIcon />}
-                                />
+                                    onClick={() => { setStepper(stepper + 1)}}
+                                />}
                             </GridItem>
                         </Grid>
                     </Box>
