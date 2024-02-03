@@ -8,8 +8,15 @@ import {
     Text 
 } from "@chakra-ui/react";
 import CourseCardComponent from "./CourseCardComponent";
+import { Score } from "@quiz/views";
 
-const ScoreComponent: FC = () => {
+type ScoreComponentProps = {
+    score: Score;
+}
+
+const ScoreComponent: FC<ScoreComponentProps> = (props) => {
+    const { score } = props;
+
     return (
         <Flex height={'90vh'} alignContent={'center'} justifyContent={'center'}>
             <Center>
@@ -18,7 +25,7 @@ const ScoreComponent: FC = () => {
                         Congratulations!
                     </Text>
                     <Text color={'#5F2D75'} fontSize={'48px'} fontWeight={'400'}>
-                    You scored <b>100%</b> on the Quiz App - English Exam Quiz!
+                    You scored <b>{score.percentage} - {score.label}</b> on the Quiz App - English Exam Quiz!
                     </Text>
                     <Text color={'#262626'} fontSize={'20px'} fontWeight={'500'}>
                         Your performance reflects a strong grasp of English language skills. Keep up the excellent work!
