@@ -1,6 +1,6 @@
 [
     {
-        "title": "Cambridge English: First (FCE) Preparation Courses",
+        "title": "B2 First",
         "description": [
             "6 x full Reading exams",
             "6 x full Listening exams",
@@ -8,17 +8,21 @@
             "1 x complete Speaking test video with hints and comments"
         ],
         "access": "18 months of access - No monthly charges",
-        "price": "€23"
+        "price": "€23",
+        "image": "https://s3-alpha-sig.figma.com/img/7f19/6b89/a1459dd7b61426bd4ce827c5636c2cc3?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eRWTFYimcpY9Prs5sv4Fe~Awns4KhrsH8F0rQ0vRR8aHXX7S~jHkwOY2zjp~Mjc5j9x8ilOFlZpT~NQ7y5hyrJZZPBBPUpPYiX9thlcCTNDxerDuG2AVy0LblkaRg5ji50r3vbXRJouStwgeE69wU~~gOjFPXUPOWoBnN2oXRdmRPXietqT-bq0XGxADbCPzh08XWTmToNPCycWu~h-suYWLszjdc3GvOfO6NhRBNa3SAUM-wV8NQ8-Wf9NTJ9etcd8KwSOqVXbK0fSrJ-Pi2v5nBoqfAewdhIp8XJ-zncfHYLcFHQ4ZHCu62Hah5nTD0XbVYSFTvvP-xD9fyZcJ-g__",
+        "link": "https://www.testandtrain.com/"
     },
     {
-        "title": "FluentU - Advanced English Learning",
+        "title": "C1 Advanced",
         "description": [
-            "5 x full Reading exams",
+            "6 x full Reading exams",
             "6 x full Listening exams",
-            "10 x full Writing exams with sample answers and examiner notes",
+            "6 x full Writing exams with sample answers and examiner notes",
             "1 x complete Speaking test video with hints and comments"
         ],
-        "access": "12 months of access - No monthly charges",
-        "price": "50$"
+        "access": "18 months of access - No monthly charges",
+        "price": "€23",
+        "image": "https://s3-alpha-sig.figma.com/img/8ddf/592a/9a08bcae67c7ae0f0c76a45aa1542f27?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FBLehHGuxwJQAfYin3-r6coumpyyA0CPz7w9HbwCCYgwMP6b7L0XSwVzF6UssGu~xZLneyQ6bH681RaB6rELQ6IhgXVYWzGGrWXGtQd6kZTyd2NXv698Otz0LfG-zzZZM0HfKvntkwd~SWf-yjoXb5LLNveIyS1myKDwTtGH-noRrYw57ICq-aIvsUnzLAmLbSiN0~UbyhVVkAyo94~n7AucTh3N1mr6NpH46MSk81LsMUJcYRuN~2oJK-HZpJc08HDq31gmSGgcV7G67F9vRS3~UbwNiHeXJgVsDmRUb1BPTDckYJf8D0KuDRsHWoqQ38gBzZv7Y94550OISgTvFQ__",
+        "link": "https://www.testandtrain.com/"
     }
 ]
