@@ -1,4 +1,4 @@
-import { useRadio, Button, useRadioGroup, HStack, Stack, SimpleGrid } from "@chakra-ui/react";
+import { useRadio, Button, useRadioGroup, HStack, Stack, SimpleGrid, Text } from "@chakra-ui/react";
 
 const CustomRadioButton = (props: any) => {
     const { getInputProps, getRadioProps } = useRadio(props);
@@ -20,9 +20,12 @@ const CustomRadioButton = (props: any) => {
         userSelect="none"
         cursor="pointer"
         _focus={{ boxShadow: 'outline' }}
+        whiteSpace="normal" 
+        height="auto" 
+        blockSize="auto"
       >
         <input {...input} />
-        {props.children}
+        <Text padding={2}>{props.children}</Text>
       </Button>
     );
 }
