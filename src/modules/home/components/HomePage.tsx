@@ -12,7 +12,8 @@ const HomePage: FC = () => {
     }
 
     return (
-        <Flex alignContent={'center'} justifyContent={'center'} mt={'60px'} height={{ 'sm': 'auto', 'lg': '90vh'}}>
+        <Flex alignContent={'center'} justifyContent={'center'} mt={'60px'} h={{ 'sm': 'auto', 'lg': '90vh'}}>
+           <Center>
             <SimpleGrid columns={2} spacing={10}>
                 <Stack as={Box} textAlign={'start'}>
                     <Heading as="h2" mt={6} mb={2} fontStyle={'Source Sans Pro'} fontSize={'64px'} fontWeight={700}>English Mastery Begins Here</Heading>
@@ -25,6 +26,7 @@ const HomePage: FC = () => {
                     <HomePageImage />
                 </Box>
             </SimpleGrid>
+            </Center>
         </Flex>
     )
 };
