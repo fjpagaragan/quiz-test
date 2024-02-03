@@ -32,7 +32,7 @@ const ScoreComponent: FC<ScoreComponentProps> = (props) => {
     }
 
     return (
-        <Flex height={'90vh'} alignContent={'center'} justifyContent={'center'}>
+        <Flex height={{'md': '90vh'}} alignContent={'center'} justifyContent={'center'}>
             <Center>
                 <Stack as={Box} textAlign={'center'}>
                     <Text color={'#D17A22'} fontSize={'36px'} fontWeight={'500'}>

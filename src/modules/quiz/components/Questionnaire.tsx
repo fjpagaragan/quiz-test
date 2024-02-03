@@ -36,7 +36,7 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
     }, [stepper, questionsLength]);
 
     return (
-        <Flex height={'90vh'} alignContent={'center'} justifyContent={'center'}>
+        <Flex h={{ 'md': '90vh'}} mt={'60px'} alignContent={'center'} justifyContent={'center'}>
             <Center>
                 <Stack as={Box} textAlign={'center'} alignItems={'center'} width={'90%'}>
                     <Text color={'#D17A22'} fontSize={'20px'}>{category}</Text>
@@ -74,7 +74,7 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
                             </GridItem>
                         </Grid>
                     </Box>
-                    <Box width={'70%'}>
+                    <Box width={{ 'md':'70%'}}>
                         <ChoicesRadioGroup options={choices} value={answer} onChange={onAnswer} />
                     </Box>
                     <Text mt={10} color={'#848FA5'} fontSize={'16px'} fontWeight={'500'}>
