@@ -3,15 +3,15 @@
 A quiz application that has a series of english question for you to Master english
 
 ## Tech Stack
-    - [ReactJS](https://react.dev/)
-    - [NextJS](https://nextjs.org/)
-    - [Typescript](https://www.typescriptlang.org/)
-    - [ChakraUI](https://chakra-ui.com/)
+- [ReactJS](https://react.dev/)
+- [NextJS](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [ChakraUI](https://chakra-ui.com/)
 
 ## Prerequisites
-    - [GIT](https://git-scm.com/)
-    - [Node](https://nodejs.org/en/download)
-    - [NPM](https://docs.npmjs.com/cli/v10/configuring-npm/install)
+- [GIT](https://git-scm.com/)
+- [Node](https://nodejs.org/en/download)
+- [NPM](https://docs.npmjs.com/cli/v10/configuring-npm/install)
 
 ## Installaion
 First you need to setup ssh in github
