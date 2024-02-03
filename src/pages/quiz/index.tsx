@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import Quiestionnaire from "@/modules/quiz/components/Questionnaire";
+import Quiz from "@quiz/components/Quiz";
 
 const QuizPage: NextPage = () => {
-    return <Quiestionnaire />
+    return <Quiz />
 }
 
 export default QuizPage;

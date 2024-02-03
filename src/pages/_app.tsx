@@ -1,7 +1,7 @@
-import "@/styles/globals.css";
+import "@styles/globals.css";
 import type { AppProps } from "next/app";
 import { Box, CSSReset, ChakraProvider, Container } from "@chakra-ui/react";
-import NavBar from "@/common/components/NavBar";
+import NavBar from "@components/NavBar";
 import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {

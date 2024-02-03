@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import Overview from "@/modules/quiz/components/Overview";
+import Overview from "@quiz/components/Overview";
 
 const OverviewQuizPage: NextPage = () => {
     return <Overview />

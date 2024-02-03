@@ -1,0 +1,122 @@
+[
+    {
+        "category": "Grammar (Sentence Structure)",
+        "question": "Identify the sentence type: 'After finishing her homework, Maria went to the park.'",
+        "choices": [
+            "Declarative",
+            "Interrogative",
+            "Imperative",
+            "Complex"
+        ],
+        "answer": "Complex",
+        "label": "first"
+    },
+    {
+        "category": "Grammar (Verb Tenses)",
+        "question": "Choose the correct form of the verb to complete the sentence: 'By next year, she _______ Spanish for five years.'",
+        "choices": [
+            "will study",
+            "studies",
+            "will have studied",
+            "studied"
+        ],
+        "answer": "will have studied",
+        "label": "second"
+    },
+    {
+        "category": "Literary Devices (Metaphor)",
+        "question": "Identify the literary device used in the phrase: 'The world is a stage.'",
+        "choices": [
+            "Simile",
+            "Metaphor",
+            "Alliteration",
+            "Hyperbole"
+        ],
+        "answer": "Metaphor",
+        "label": "third"
+    },
+    {
+        "category": "Grammar (Parallelism)",
+        "question": "Select the correct sentence with proper parallelism:",
+        "choices": [
+            "She likes hiking, swimming, and to ride her bike.",
+            "She likes hiking, swimming, and riding her bike.",
+            "She likes to hike, swim, and riding her bike.",
+            "She likes to hike, swim, and to ride her bike."
+        ],
+        "answer": "She likes hiking, swimming, and riding her bike.",
+        "label": "fourth"
+    },
+    {
+        "category": "Punctuation (Colon Usage)",
+        "question": "Identify the correct usage of the colon: 'The ingredients for the recipe are: eggs, flour, and sugar.'",
+        "choices": [
+            "The ingredients for the recipe are eggs, flour, and sugar.",
+            "The ingredients for the recipe are - eggs, flour, and sugar.",
+            "The ingredients for the recipe are, eggs, flour, and sugar.",
+            "The ingredients for the recipe are; eggs, flour, and sugar."
+        ],
+        "answer": "The ingredients for the recipe are eggs, flour, and sugar.",
+        "label": "fifth"
+    },
+    {
+        "category": "Vocabulary (Synonyms)",
+        "question": "Choose the correct synonym for the word in caps: 'The student exhibited EXEMPLARY behavior during the presentation.'",
+        "choices": [
+            "Superior",
+            "Average",
+            "Outstanding",
+            "Mediocre"
+        ],
+        "answer": "Outstanding",
+        "label": "sixth"
+    },
+    {
+        "category": "Punctuation (Apostrophe Usage)",
+        "question": "Identify the correct usage of the apostrophe in the sentence: 'The dogs bed is in the corner.'",
+        "choices": [
+            "The dogs bed is in the corner.",
+            "The dog's bed is in the corner.",
+            "The dogs' bed is in the corner.",
+            "The dogs bed's is in the corner."
+        ],
+        "answer": "The dog's bed is in the corner.",
+        "label": "seventh"
+    },
+    {
+        "category": "Grammar (Relative Pronouns)",
+        "question": "Complete the sentence with the appropriate relative pronoun: 'The person _______ won the award was my sister.'",
+        "choices": [
+            "who",
+            "whom",
+            "whose",
+            "which"
+        ],
+        "answer": "who",
+        "label": "eigth"
+    },
+    {
+        "category": "Spelling",
+        "question": "Identify the correct spelling of the word: 'Rhythm'",
+        "choices": [
+            "Rythm",
+            "Rhythm",
+            "Rhythym",
+            "Rythem"
+        ],
+        "answer": "Rhythm",
+        "label": "ninth"
+    },
+    {
+        "category": "Grammar (Comparative Adjectives)",
+        "question": "Choose the correct form of the adjective to complete the sentence: 'The test was ______ than she expected.'",
+        "choices": [
+            "more difficult",
+            "difficulters",
+            "difficulter",
+            "more difficulter"
+        ],
+        "answer": "more difficult",
+        "label": "tenth"
+    }
+]

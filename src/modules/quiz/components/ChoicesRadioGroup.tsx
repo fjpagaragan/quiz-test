@@ -34,7 +34,7 @@ export const ChoicesRadioGroup = (props: any) => {
     const group = getRootProps();
   
     return (
-      <SimpleGrid  columns={2} spacing={4} {...group}>
+      <SimpleGrid  columns={{'sm': 1, 'md': 2}} spacing={4} {...group}>
         {props.options.map((value: any) => {
           const radio = getRadioProps({ value });
           return (

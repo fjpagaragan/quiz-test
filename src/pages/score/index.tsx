@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import ScoreComponent from "@/modules/quiz/components/Score/ScoreComponent";
+import ScoreComponent from "@quiz/components/Score/ScoreComponent";
 
 const ScorePage: NextPage = () => {
     return <ScoreComponent />
