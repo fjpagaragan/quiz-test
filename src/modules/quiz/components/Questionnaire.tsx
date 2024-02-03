@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction, useState } from "react";
+import { Dispatch, FC, SetStateAction, useMemo, useState } from "react";
 import { 
     Box, 
     Flex, 
@@ -8,7 +8,8 @@ import {
     Heading, 
     IconButton, 
     Grid,
-    GridItem
+    GridItem,
+    Button
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { ChoicesRadioGroup } from "@quiz/components/ChoicesRadioGroup";
@@ -30,6 +31,9 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
     const { category, question, choices, answer, onAnswer, stepper, setStepper } = props;
     const questionsLength: number = getQuestionLength();
     const hasNextQuestion = questionsLength - 1 > stepper;
+    const isLastQuestion = useMemo(() => {
+        return stepper + 1 === questionsLength
+    }, [stepper, questionsLength]); 
 
     return (
         <Flex height={'90vh'} alignContent={'center'} justifyContent={'center'}>
@@ -76,6 +80,9 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
                     <Text mt={10} color={'#848FA5'} fontSize={'16px'} fontWeight={'500'}>
                         {stepper + 1} / {questionsLength}
                     </Text>
+                    {isLastQuestion && 
+                        <Button w={'30%'} color={'white'} bg={'#5F2D75'} _hover={{ border: "1px", borderColor: "#5F2D75", background: "#5F2D75", textColor: "white" }}>Submit</Button>
+                    }
                 </Stack>
             </Center>
         </Flex>
