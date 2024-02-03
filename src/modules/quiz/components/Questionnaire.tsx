@@ -73,6 +73,9 @@ const Quiestionnaire: FC<QuestionnaireProps> = (props) => {
                     <Box width={'70%'}>
                         <ChoicesRadioGroup options={choices} value={answer} onChange={onAnswer} />
                     </Box>
+                    <Text mt={10} color={'#848FA5'} fontSize={'16px'} fontWeight={'500'}>
+                        {stepper + 1} / {questionsLength}
+                    </Text>
                 </Stack>
             </Center>
         </Flex>
