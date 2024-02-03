@@ -18,17 +18,14 @@
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
       "@components/*": ["common/components/*"],
-      "@store/*": ["common/store/*"],
-      "@hooks/*": ["common/hooks/*"],
       "@types/*": ["common/types/*"],
       "@utils/*": ["common/utils/*"],
-      "@*/response": ["modules/*/models/response"],
       "@*/views": ["modules/*/models/views"],
       "@*/transformers": ["modules/*/models/transformers"],
-      "@*/validations": ["modules/*/models/validations"],
       "@*": ["modules/*"]
-    }
+    },
   },
+  "types": ["node", "jest", "@testing-library/jest-dom"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "skipLibCheck": true,
+      "noEmit": true,
+      "declaration": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "react-jsx",
+      "allowJs": false,
+      "incremental": true,
+      "baseUrl": "src",
+      "moduleResolution": "node",  
+      "paths": {
+        "@/*": ["../*"],
+        "@pages/*": ["pages/*"],
+        "@styles/*": ["styles/*"],
+        "@components/*": ["common/components/*"],
+        "@types/*": ["common/types/*"],
+        "@utils/*": ["common/utils/*"],
+        "@*/response": ["modules/*/models/response"],
+        "@*/views": ["modules/*/models/views"],
+        "@*/transformers": ["modules/*/models/transformers"],
+        "@*/validations": ["modules/*/models/validations"],
+        "@*": ["modules/*"],
+        "@types/jest/*": ["../node_modules/@types/jest/*"],
+        "@types/node/*": ["../node_modules/@types/node/*"],
+        "@types/react/*": ["../node_modules/@types/react/*"],
+        "@types/react-dom/*": ["../node_modules/@types/react-dom/*"],
+      },
+      "types": ["node", "jest", "@testing-library/jest-dom"],
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
+  }
+  
