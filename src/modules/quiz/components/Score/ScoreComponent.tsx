@@ -32,7 +32,7 @@ const ScoreComponent: FC<ScoreComponentProps> = (props) => {
     }
 
     return (
-        <Flex height={{'md': '90vh'}} alignContent={'center'} justifyContent={'center'}>
+        <Flex alignContent={'center'} justifyContent={'center'}>
             <Center>
                 <Stack as={Box} textAlign={'center'}>
                     <Text color={'#D17A22'} fontSize={'36px'} fontWeight={'500'}>
@@ -49,7 +49,7 @@ const ScoreComponent: FC<ScoreComponentProps> = (props) => {
                     </Text>
                     <Box w={'100%'}>
                         <Center>
-                            <SimpleGrid columns={2} spacing={4}>
+                            <SimpleGrid columns={courses.length} spacing={4}>
                                 {courses.map((course, index) => {
                                     return <CourseCardComponent key={index} course={course} />;
                                 })}
